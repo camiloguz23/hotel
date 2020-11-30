@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+} 
+
+/* --nave---- */
+.nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    height: 40px;
+    
+}
+
+.contenedoricono{
+    
+  
+  width: 40px;
+ margin-left:5%;
+ padding:10px 10px 0px 13px;
+}
+
+
+.fa-align-justify{
+    color:white;
+    cursor:pointer;
+
+}
+
+.cabeza{
+    margin-left:50%;
+    display: flex;
+ 
+}
+
+.cosa{
+    cursor: pointer;
+    color: white;
+    padding:10px 20px 0 20px;
+}
+
+.iniciosesion{
+  
+    color:white ;
+    cursor:pointer;
+}
+
+.cajainicioSession{
+    
+    padding:10px 20px  0 20px;
+}
+/* LETRA DE IDIOMA */
+.idioma{
+    padding:10px 20px  0 20px;
+}
+
+.Tidioma{
+    cursor: pointer;
+    color:white;
+    padding:0px 10px 0px 0px;
+}
+/* ---------------listado de idiomas--------- */
+.idiomas{
+    margin-left: -10%;
+    margin-top: 1%;
+   display: none; /* -----------------------> OCULTANDO IDIOMAS */
+    list-style: none;
+    width: 150px;
+    font-size: 20px;
+   
+    position:absolute;
+}
+
+.idiomas > li{
+    background-color: rgba(255, 255, 255, 0.945);
+    margin-left:-100%;
+    padding:5px;
+    text-align: center;
+   
+}
+
+.idiomas > li:hover{
+    cursor: pointer;
+    background-color: rgba(189, 184, 184, 0.973);
+    border:1px solid rgb(48, 47, 47);
+}
+
+.idiomas > li a{
+    color:black;
+    text-decoration: none;
+}
+
+.idiomas > li a:hover{
+    color: white;
+   
+}
+
+
+/* -----------------session dos-------------------------- */
+/* informacion de hotel */
+.logoArriba{
+    margin-top: 2%;
+    margin-left: 3%;
+    width:340px;
+    height: 150px;
+}
+
+.informacionH{
+    display: flex;
+}
+
+.informacionSi{
+    margin-top:2%;
+    margin-left: 2%;
+}
+.informacionSi > span{
+    padding: 15px 0 0 0;
+    display: block;
+  
+}
+.botonReserar{
+    
+    width: 40%;
+}
+.btnReservar{
+    margin-top:5%;
+    margin-left: 60%;
+    background-color: rgb(253, 170, 16);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.btnReservar:hover{
+    background-color: rgb(236, 163, 26);
+}
+
+/* menu */
+.menuu{
+    padding:0 0 0 7%;
+    
+    margin-top:3%;
+}
+
+.list-inline{
+    display: flex;
+    margin-bottom: 18px;
+}
+.list-inline > li{
+    font-size: 16px;
+    padding: 10px 20px 10px 20px ;
+    border-left: 1px solid rgb(102, 102, 102); 
+    
+}
+.list-inline > li a{
+    color: black;
+}
+.text-uppercase{
+    text-decoration: none;
+}
+
+
+
+
+/* -----------------footer-------------------------------- */
+.patrocinadores{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ margin-left:10%;
+    width: 40%;
+    margin-bottom: 2%;
+    gap: 3px;
+  
+}
+
+.imgP{
+    width: 70px;
+    height: 60px;
+}
+
+/* patrocinadores */
+.patroContainer{
+    margin-top: 3%;
+
+    width: 70%;
+    margin-left:14%;
+}
+
+.patrocinadores2{
+  
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+    width: 60%;
+    margin-left: 2%;
+    gap: 6px;
+}
+
+.patrocinadores3{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 40%;
+    margin-left: 2%;
+    gap: 0px;
+}
+
+.patrodos{
+    display: flex;
+}
+
+.hbe-brandbar_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(92, 88, 88);
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    max-width: 980px;
+}
+
+    .hbe-brandbar_section::after {
+    margin: 0 0 0 6px;
+}
+
+
+.hbe-brandbar_section::before, .hbe-brandbar_section::after {
+    content: '';
+    border-top: 1px solid #dd0707;
+    margin: 0 6px 0 0;
+    flex: 1 0 6px;
+    display: block;
+}
+
+.hbe, .hbe *, .hbe *:before, .hbe *:after {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
