@@ -150,6 +150,7 @@
 
 .list-inline{
     display: flex;
+    list-style-type: none;
     margin-bottom: 18px;
 }
 .list-inline > li{
@@ -169,6 +170,35 @@
 
 
 /* -----------------footer-------------------------------- */
+.primeraFooter{
+    background-color: rgb(199, 199, 199);
+}
+
+.informacion1{
+    padding: 30px;
+}
+
+.tituloInfo{
+    font-size: 30px;
+    padding: 9px;
+}
+.informacion1 div span{
+    padding: 9px;
+    font-size: 20px;
+}
+
+.atravesado{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.direccionF{
+    padding: 9px;
+    font-size: 20px;
+    margin-left: 2.2%;
+}
+
 .patrocinadores{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -248,5 +278,109 @@
     box-sizing: border-box;
 }
 
+/* quitando los punticos */
+.hbe-socialIcons_links,.hbe-linkBlocks_links,.sitioscorp,.regalo{
+    list-style-type: none;
+  
+}
+/* ALGO DE RESERVAS/////////// */
+
+.lineaGra .grandeLinea{
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cajaotra{
+    
+    width: 40%;
+}
+
+.vaina2{
+  
+    width: 60%;
+    display: inline-flex;
+}
+
+.vaina1{
+   margin-top: 4%;
+    display: flex;
+    font-size: 20px;
+    
+}
+
+.atencionalcliente{
+    /* border:4px solid rgb(30, 255, 0); */
+    margin-left: 4%;
+}
+
+.sitiosCorporativos{
+   /*  border:4px solid rgb(217, 255, 0); */
+   margin-left: 4%;
+}
+.explorarmas{
+    /* border:4px solid rgb(255, 145, 0); */
+    margin-left: 4%;
+}
+.algo_de_reservas{
+  
+    background:rgb(49, 48, 48);
+    width: 100%;
+    margin-top: 2%;
+  /*   height: 300px; */
+}
+
+.contenedorreservas{
+    
+    width: 80%;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorreservas  a{
+    color:rgb(150, 149, 149);
+    text-decoration: none;
+    list-style: none;
 
 
+}
+
+.contenedorreservas  a:hover{
+    color:rgb(228, 227, 227);
+}
+
+.politicaPrivacidad{
+    background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 12px 0 0 0;
+  justify-content: center;
+}
+
+.containerpolitica{
+    color: white;
+    text-align: center;
+    
+    width: 95%;
+    
+}
+
+.containerpolitica span{
+    display: inline;
+    font-size: 16px;
+}
+.ulp{
+   display: flex;
+   list-style-type: none;
+   
+   padding:0;
+   margin:0;
+}
+.ulp li a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+
+.ulp li::after {
+    content: "|";
+    padding: 0 8px 0 8px;
+    color: #666;
+    margin-left: 3px;
+}
