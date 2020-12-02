@@ -6,16 +6,72 @@
     <link rel="stylesheet" href="css/index.css">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/a90c49b6b2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Fuente Family Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Hotel</title>
 </head>
 <body>
     <div class="contenedor">
         <header class="header">
-            <div class="encabezado"></div>
-            <div class="menu"></div>
+            <div class="encabezado">
+                <div class="main_encabezado">
+                    <div class="encabezado_1">
+                        <div class="barras">
+                            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                            <a href="index.html"><h4>HYATT</h4></a>
+                        </div>
+                    </div>
+                    <div class="encabezado_2">
+                        <div class="wordH">
+                            <a href="#">World of Hyatt</a></div>
+                        <div class="iniciarS">
+                            <a href="#" id="iniciarSesion">Iniciar Sesión <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <div class="submenu" id="submenuIniciar">
+                                <form action="" class="formIniciar">
+                                    <div class="grupo_email">
+                                        <label for="email">Correo électronico</label>
+                                        <input type="email" name="email" id="email" placeholder="Ingrese su email">
+                                    </div>
+                                    <div class="grupo_password">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+                                    </div>
+                                    <input type="submit" class="btn_iniciar" value="Iniciar Sesión">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menubox">
+                    <div class="reservar">
+                        <div class="reservar1">
+                            <p>Grand Hyatt, Bogotá</p>
+                        </div>
+                        <div class="reservar1 reservar2">
+                            <a href="#">RESERVAR AHORA</a>
+                        </div>
+                    </div>
+                    <div class="navegacion">
+                        <div>
+                            <a href="index.html">HOTEL</a>
+                        </div>
+                        <div>
+                            <a href="html/habitaciones.html">HABITACIONES</a>
+                        </div>
+                        <div>
+                            <a href="#">FOTOS Y OPINIONES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <div class="inicio">
-            <video class="video-player-video" muted="muted" playsinline="playsinline" webkit-playsinline="webkit-playsinline" x-webkit-airplay="allow" poster="data:image/gif,AAAA" autoplay="autoplay" loop="loop" preload="auto" height="1080px" style="width: 100%; height: 100%; margin-top: 153px;" data-width="1280" data-height="720">
+            <video class="video-player-video" muted="muted" playsinline="playsinline" webkit-playsinline="webkit-playsinline" x-webkit-airplay="allow" poster="data:image/gif,AAAA" autoplay="autoplay" loop="loop" preload="auto" height="1080px" style="width: 100%; height: 100%;" data-width="1280" data-height="720">
                 <source src="https://videos.hyatt.com/grand_hyatt_bogota_masthead_072720.mp4" data-src="https://videos.hyatt.com/grand_hyatt_bogota_masthead_072720.mp4" type="video/mp4">
             </video>
         </div>
@@ -32,27 +88,23 @@
                 <p class="titulo_secciones-especial">Comodidades</p>
             </div>
             <div class="contenido_comodidades">
-                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true">Acceso de cortesía a Internet</i>
-                <i class="iconos_comodidades fa fa-concierge-bell">Servicio de habitaciones</i>
-                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true">Acceso de cortesía a Internet</i>
-                <i class="iconos_comodidades fa fa-concierge-bell">Servicio de habitaciones</i>
-                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true">Acceso de cortesía a Internet</i>
-                <i class="iconos_comodidades fa fa-concierge-bell">Servicio de habitaciones</i>
-                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true">Acceso de cortesía a Internet</i>
-                <i class="iconos_comodidades fa fa-concierge-bell">Servicio de habitaciones</i>
-                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true">Acceso de cortesía a Internet</i>
-                <i class="iconos_comodidades fa fa-concierge-bell">Servicio de habitaciones</i>
-                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true">Acceso de cortesía a Internet</i>
-                <i class="iconos_comodidades fa fa-concierge-bell">Servicio de habitaciones</i>
+                <i class="iconos_comodidades fa fa-wifi" aria-hidden="true"><p>Acceso a Internet</p></i>
+                <i class="iconos_comodidades fa fa-concierge-bell"><p>Servicio de habitacion</p></i>
+                <i class="fas fa-dumbbell    "> <p>Sala de Fitness</p></i>
+                <i class="fas fa-swimmer    "> <p>Piscina</p></i>
+                <i class="fas fa-dog    "> <p>Aceptamos mascotas</p></i>
+                <i class="fas fa-tshirt    "> <p>Servicio de Lavanderia</p></i>
+                <i class="fas fa-spa    "> <p>Spa</p></i>
+                <i class="fa fa-print" aria-hidden="true"> <p>Servicio de negocios</p></i>
             </div>
             <div class="footer_comodidades">
                 <a href="#" class="btn_servicios">Más servicios</a>
             </div>
         </div>
-        <div class="app">
-            <div class="contenido_app"></div>
-        </div>
         <div class="eventos">
+            <div class="titulo_comodidades">
+                <p class="titulo_secciones">Recreación</p>
+            </div>
             <div class="evento_1"></div>
             <div class="evento_2">
                 <div class="img">
@@ -68,17 +120,248 @@
                 <img src="img/staticmap.png" alt="">
             </div>
             <div class="descripcion">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <p class="titulo_secciones">Ubicanos</p>
+                </div>
+                <div>
+                    <p>Direccion</p>
+                    <small>Calle 24 A # 57 – 60</small>
+                    <small>Bogotá, Colombia, 111321</small>
+                </div>
+                <div>
+                    <p>Telefono</p>
+                    <small>+57 1 654 1234</small>
+                </div>
+                <div>
+                    <p>Correo electrónico</p>
+                    <small>bogota.grand@hyatt.com</small>
+                </div>
             </div>
         </div>
-        <div class="habitaciones"></div>
-        <div class="hotel"></div>
-        <div class="restaurante"></div>
-        <div class="ocurre"></div>
-        <div class="publicidad"></div>
-        <footer class="footer"></footer>
+        <div class="hotel">
+            <div class="titulo_comodidades">
+                <p class="titulo_secciones">Nuestro Hotel</p>
+                <div class="box_hotel">
+                    <div class="HotelGrande">
+                        <img src="imagenes/recepcion.jpg" alt="">
+                    </div>
+                    <div class="HotelGrande">
+                        <img src="imagenes/restaurante.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/piscina.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/piscina2.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/comida.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/comida1.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/jugo.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/barbacoa.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/barbacoa1.jpg" alt="">
+                    </div>
+                    <div class="HotelSmall">
+                        <img src="imagenes/asado.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="primeraFooter">
+                <div class="informacion1">
+                    <div>
+                        <h3 class="tituloInfo"> Hyatt E-concierge</h3>
+                        <span> Hecho su reserva Ahora, personalice su estadía, desde la programación del transporte hasta la
+                            solicitud
+                            de almohadas adicionales
+                        </span>
+                       
+                    </div>
+                </div>
+    
+                <hr class="atravesado">
+                <div class="direccionF">
+                    <span>Calle 24 A # 57 – 60, Bogotá, Colombia, 111321 <br>
+                        Tel.: +57-3115497411 | Fax: +57 1 6541235 | ibague.genial@coma.com
+    
+                    </span>
+                </div>
+            </div>
+    
+    
+            <div class="patroContainer">
+                <div class="hbe-brandbar_section">SERIE ATEMPORAL</div>
+                <div class="patrocinadores">
+    
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+                    <div class="patroci "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP" alt="">
+                    </div>
+    
+                </div>
+                <div class="hbe-brandbar_section">SERIE CONTEMPORÁNEA</div>
+    
+                <div class="patrodos">
+    
+                    <div class="patrocinadores2">
+    
+                        <div class="patroci2 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci2 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci2 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci2 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci2 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci2 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+    
+    
+                    </div>
+    
+                    <div class="patrocinadores3">
+    
+                        <div class="patroci3 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci3 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+                        <div class="patroci3 "><img src="../imagenes/seccionHabitaciones/patrocinio.png" class="imgP"
+                                alt=""></div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="algo_de_reservas">
+                <div class="contenedorreservas">
+                    <div class="hbe-bestRates">
+    
+                        <div class="lineaGra">
+                            <a href="#" class="lineaGrande">
+                                <span class="grandeLinea">LA GARANTIA DE MEJOR TARIFA DE HYATT.COM</span>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBTENER MAS INFORMACION&nbsp; <i
+                                        class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="minicontenedorreservas">
+    
+    
+                        <div class="vaina1">
+                            <div class="vaina2">
+                                <div class="atencionalcliente">
+                                    <div class="hbe-linkBlocks_heading">Atención al cliente</div>
+                                    <ul class="hbe-linkBlocks_links">
+                                        <li><a href="#"><span>Preguntas
+                                                    frecuentes</span></a></li>
+                                        <li><a href="#"><span>Modificar&nbsp;/&nbsp;Cancelar
+                                                    reservas</span></a></li>
+                                        <li><a href="#"><span>Recuperar
+                                                    factura del hotel</span></a></li>
+                                        <li><a href="#"><span>Atención al
+                                                    cliente</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="sitiosCorporativos">
+                                    <div class="#">Sitios corporativos</div>
+                                    <ul class="sitioscorp">
+                                        <li><a href="#" target="_blank" rel="noopener"><span>Posibilidades de
+                                                    empleo</span></a></li>
+                                        <li><a href="#" target="_blank" rel="noopener"><span>Relaciones con los
+                                                    inversionistas</span></a></li>
+                                        <li><a href="#" target="_blank" rel="noopener"><span>Proyectos Hyatt</span></a></li>
+                                        <li><a href="#"><span>Agentes de
+                                                    viaje</span></a></li>
+                                        <li><a href="#"><span>Corporate Travel</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explorarmas">
+                                    <div class="mirarMas">Explorar más</div>
+                                    <ul class="regalo">
+                                        <li><a href="#"><span>Certificados de regalo</span></a>
+                                        </li>
+                                        <li><a href="#"><span>Residences</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cajaotra">
+                                <div class="hbe-footer_row-alpha">
+                                    <div class="aplicaciones">
+                                        <div class="tituloaplicaciones">Obtener la Aplicación Móvil</div>
+                                        <a href="#"><img
+                                                src="https://www.hyatt.com/hds/bookends/1.19.0/images/locales/es-ES/ios@2x.png"
+                                                height="40" width="135" class="hbe-mobileBadges_ios"
+                                                alt="Consiguela en el App Store"></a>
+                                        <a href="#"><img
+                                                src="https://www.hyatt.com/hds/bookends/1.19.0/images/locales/es-ES/play@2x.png"
+                                                height="40" width="135" class="hbe-mobileBadges_play"
+                                                alt="Disponible en Google Play"></a>
+                                    </div>
+                                </div>
+                                <div class="redesSociales">
+                                    <div class="hbe-socialIcons_heading">Conéctese con Hyatt</div>
+                                    <ul class="hbe-socialIcons_links">
+                                        <li><a href="#" class="#"><span class="hbe-sr-only">Facebook</span></a></li>
+                                        <li><a href="#" class="#"><span class="hbe-sr-only">Instagram</span></a></li>
+                                        <li><a href="#" class="#"><span class="hbe-sr-only">Twitter</span></a></li>
+                                        <li><a href="#" class="#"><span class="hbe-sr-only">Linkedin</span></a></li>
+                                        <li><a href="#" class="#"><span class="hbe-sr-only">Youtube</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+    
+            <div class="politicaPrivacidad" lang="es-ES">
+                <div class="containerpolitica">
+                    <ul class="ulp">
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Centro de cookies</a> </li>
+                        <li><a href="#">Precauciones y seguridad</a></li>
+                        <li><a href="#">Esclavitud  moderna y tráfico de personas</a></li>
+                        <li><a href="#">No permito la venta de mi información personal</a></li>
+                       
+                    </ul>
+                    <span>© 2020 Hyatt Corporation</span>
+                </div>
+            </div>
+        </footer>
+    
     </div>
+    <script src="javascript/submenu.js"></script>
 </body>
 </html>
