@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 body {
     background-color: #fffbfb;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor {
@@ -12,11 +15,24 @@ body {
     height: 100%;
 }
 
+.titulo_secciones {
+    color: #bd213e;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.disfrute, .eventos, .mapa, .hotel {
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Estilos header */
+
 .header {
     width: 100%;
-    height: 148px;
-
-    position: fixed;
+    height: 184px;
 }
 
 .header .encabezado {
@@ -27,31 +43,211 @@ body {
 
 .header .menu {
     width: 100%;
-    height: 104px;
+    height: 140px;
     background-color: white;
     border-bottom: 5px solid #bd213e;
 }
 
-
-
-.titulo_secciones {
-    color: #bd213e;
-    font-weight: bold;
-    font-size: 25px;
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.titulo_secciones-especial {
-    color: #282828;
-    font-weight: lighter;
-    font-size: 23px;
+.main_encabezado {
+    width: 85%;
+    height: 100%;
+
+    display: flex;
 }
 
-.disfrute, .comodidades, .eventos, .mapa {
+.encabezado_1 {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.encabezado_1 i {
+    color: white;
+}
+
+.barras {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    gap: 10px;
+}
+
+.barras a {
+    text-decoration: none;
+    color: white;
+}
+
+.encabezado_2 {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+}
+
+.wordH, .iniciarS {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordH a, .iniciarS a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Estilos del submenu iniciar seccion */
+
+.iniciarS {
+    position: relative;
+}
+
+.submenu {
+    width: 300px;
+    height: 300px;
+    background-color: #fffbfb;
+    position: absolute;
+    border: 0.1px solid #666;
+
+    top: 44px;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.formIniciar {
     width: 90%;
-    height: auto;
-    margin: 40px auto;
-    text-align: center;
+    height: 90%;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+
+.grupo_email, .grupo_password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo_email input, .grupo_password input {
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #ffb612;
+}
+
+.grupo_email input:focus, .grupo_password input:focus {
+    outline: none;
+}
+
+.btn_iniciar {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffb612;
+    cursor: pointer;
+}
+
+.btn_iniciar:focus {
+    outline: none;
+}
+
+/* Continuan estilos del header */
+
+.wordH a:hover, .iniciarS a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubox {
+    width: 90%;
+    height: 100%;
+}
+
+.reservar {
+    width: 100%;
+    height: 65%;
+
+    display: flex;
+    align-items: center;
+}
+
+.reservar p {
+    font-weight: bold;
+}
+
+.reservar1 {
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.reservar2 {
+    justify-content: flex-end;
+}
+
+.reservar2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 15px 30px;
+    background-color: #ffb612;
+}
+
+.navegacion {
+    width: 100%;
+    height: 35%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navegacion a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+.navegacion div:hover, .navegacion a:hover {
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+
+/* Estilos de la seccion disfrute */
 
 .disfrute .titulo_disfrute {
     padding-bottom: 60px;
@@ -64,12 +260,35 @@ body {
     font-weight: lighter;
 }
 
+/* Estilos de la seccion comodidades */
+
+.comodidades {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #026cc4;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .titulo_comodidades {
     padding-bottom: 40px;
 }
 
+.titulo_secciones-especial {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .contenido_comodidades {
+    width: 90%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-size: 20px;
@@ -80,6 +299,11 @@ body {
 
 .contenido_comodidades i {
     margin: 20px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .iconos_comodidades {
@@ -89,22 +313,20 @@ body {
 
 .btn_servicios {
     text-decoration: none;
-    color: #282828;
-    padding: 15px 40px;
-    border: 1px solid #282828;
+    color: white;
+    padding: 12px 36px;
+    border: 1px solid white;
 }
 
-.btn_servicios:hover {
-    background-color: #026cc4;
-    color: white;
-    border-color: white;
-}
+/* Estilos de la seccion app */
 
 .app {
     width: 100%;
     height: 300px;
     background-color: #026cc4;
 }
+
+/* Estilos de la seccion recreacion */
 
 .evento_1 {
     height: 266px;
@@ -131,6 +353,8 @@ body {
     height: 100%;
 }
 
+/* Estilos de la seccion mapa */
+
 .box_mapa {
     width: 90%;
     display: flex;
@@ -138,9 +362,270 @@ body {
 }
 
 .mapa {
-    width: 51%;
+    width: 50%;
+    border: 2px solid #282828;
+}
+
+.mapa img {
+    width: 100%;
+    height: 100%;
 }
 
 .descripcion {
-    width: 49%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.descripcion p {
+    font-weight: bold;
+}
+
+/* Estilos seccion Nuestro hotel */
+
+.box_hotel {
+    margin-top: 40px;
+    width: 100%;
+    height: 838px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.HotelGrande {
+    width: 50%;
+    height: 50%;
+}
+
+.HotelSmall {
+    width: 25%;
+    height: 25%;
+}
+
+.HotelGrande img, .HotelSmall img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Estilos del footer */
+
+.primeraFooter{
+    background-color: rgb(199, 199, 199);
+}
+
+.informacion1{
+    padding: 30px;
+}
+
+.tituloInfo{
+    font-size: 30px;
+    padding: 9px;
+}
+.informacion1 div span{
+    padding: 9px;
+    font-size: 20px;
+}
+
+.atravesado{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.direccionF{
+    padding: 9px;
+    font-size: 20px;
+    margin-left: 2.2%;
+}
+
+.patrocinadores{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ margin-left:10%;
+    width: 40%;
+    margin-bottom: 2%;
+    gap: 3px;
+  
+}
+
+.imgP{
+    width: 70px;
+    height: 60px;
+}
+
+/* patrocinadores */
+.patroContainer{
+    margin-top: 3%;
+
+    width: 70%;
+    margin-left:14%;
+}
+
+.patrocinadores2{
+  
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+    width: 60%;
+    margin-left: 2%;
+    gap: 6px;
+}
+
+.patrocinadores3{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 40%;
+    margin-left: 2%;
+    gap: 0px;
+}
+
+.patrodos{
+    display: flex;
+}
+
+.hbe-brandbar_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(92, 88, 88);
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    max-width: 980px;
+}
+
+    .hbe-brandbar_section::after {
+    margin: 0 0 0 6px;
+}
+
+
+.hbe-brandbar_section::before, .hbe-brandbar_section::after {
+    content: '';
+    border-top: 1px solid #dd0707;
+    margin: 0 6px 0 0;
+    flex: 1 0 6px;
+    display: block;
+}
+
+.hbe, .hbe *, .hbe *:before, .hbe *:after {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* quitando los punticos */
+.hbe-socialIcons_links,.hbe-linkBlocks_links,.sitioscorp,.regalo{
+    list-style-type: none;
+  
+}
+/* ALGO DE RESERVAS/////////// */
+
+.lineaGra .grandeLinea{
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cajaotra{
+    
+    width: 40%;
+}
+
+.vaina2{
+  
+    width: 60%;
+    display: inline-flex;
+}
+
+.vaina1{
+   margin-top: 4%;
+    display: flex;
+    font-size: 20px;
+    
+}
+
+.atencionalcliente{
+    /* border:4px solid rgb(30, 255, 0); */
+    margin-left: 4%;
+}
+
+.sitiosCorporativos{
+   /*  border:4px solid rgb(217, 255, 0); */
+   margin-left: 4%;
+}
+.explorarmas{
+    /* border:4px solid rgb(255, 145, 0); */
+    margin-left: 4%;
+}
+.algo_de_reservas{
+  
+    background:rgb(49, 48, 48);
+    width: 100%;
+    margin-top: 2%;
+  /*   height: 300px; */
+}
+
+.contenedorreservas{
+    
+    width: 80%;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorreservas  a{
+    color:rgb(150, 149, 149);
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.contenedorreservas  a:hover{
+    color:rgb(228, 227, 227);
+}
+
+.politicaPrivacidad{
+    background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 12px 0 0 0;
+  justify-content: center;
+}
+
+.containerpolitica{
+    color: white;
+    text-align: center;
+    
+    width: 95%;
+    
+}
+
+.containerpolitica span{
+    display: inline;
+    font-size: 16px;
+}
+.ulp{
+   display: flex;
+   list-style-type: none;
+   
+   padding:0;
+   margin:0;
+}
+.ulp li a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+
+.ulp li::after {
+    content: "|";
+    padding: 0 8px 0 8px;
+    color: #666;
+    margin-left: 3px;
 }
