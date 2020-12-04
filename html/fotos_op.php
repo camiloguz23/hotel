@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/fotos_op.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a90c49b6b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php
         require "./cabecera.php";
     ?>
     <main>
-        <figure class="imgg">
+        <figure class="img">
             <img src="../img/imgg.webp" alt="imgg">
         </figure>
         <nav class="menu2">
@@ -33,7 +35,7 @@
                 </figure>
             </div>
         </section>
-        <section class="gr">
+        <!-- <section class="gr">
             <a href="#">Galeria</a>
             <a href="#">Repaso</a>
         </section>
@@ -49,7 +51,7 @@
             </div>
             <figure class="img">
                 <img src="../img/yootube.jpg" alt="yootube">
-            </figure>
+            </figure> -->
         </section>
         <!-- hotel  -->
         <section class="foh">
@@ -82,7 +84,7 @@
         </section>
         <!-- suites  -->
         <section class="foh">
-        <h2>suitess</h2>
+        <h2>Suites</h2>
             <figure>
                 <img src="../img/suites1.webp" alt="suites1">
             </figure>
@@ -101,7 +103,7 @@
         </section>
         <!-- restaurantes -->
         <section class="foh">
-        <h2>Restautantes</h2>
+        <h2>Restaurantes</h2>
             <figure>
                 <img src="../img/restaurantes1.webp" alt="restaurantes1">
             </figure>
@@ -120,7 +122,7 @@
         </section>
         <!-- piscinas -->
         <section class="foh">
-            <h2>piscinas</h2>
+            <h2>Piscinas</h2>
         <figure>
                 <img src="../img/piscina.webp" alt="piscina">
             </figure>
