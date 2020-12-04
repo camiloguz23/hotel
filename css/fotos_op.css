@@ -1,0 +1,146 @@
+
+
+/************declaramos estilos generales**************/
+:root{
+    --font-size:16px;
+    --font-family:helvetica;
+    --main-color:#000;
+    --secon-color:#fff;
+}
+html{
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+header{
+    top: 0;
+    z-index: 997;
+    background-color: var(--secon-color);
+} 
+
+.img {
+    width: 100%;
+    height: 500px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.translate{
+    position: absolute;
+    transform: translateY(-150px);
+    transition: all 1s ease-in-out;
+    z-index: -100000;
+    overflow: hidden;
+    opacity: 0;
+}
+.menu2{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 30px auto;
+    /* text-align: center; */
+    color:var(--main-color);
+}
+.menu2 a{
+    text-decoration: none;
+    margin: 1vw  ;
+    padding: 0 2vw ;
+    color:var(--main-color);
+    border-right: thin solid var(--main-color);
+    border-left: thin solid var(--main-color);
+}
+.fo{
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+    top:0;
+    margin-bottom: 3rem;
+}
+.fo h2{
+    color:#BD213E;
+    font-size:2rem;
+    margin-bottom: 4rem;
+}
+.fo .imagenes{
+    width:10%;
+    float: left;
+    margin:1rem 0 0 45%;
+}
+.fo .imagenes img{
+    width:25%;
+    border-radius:50% ;
+}
+.gr{
+    display:grid;
+    grid-template-columns: 3vw 3vw;
+    justify-content: center;
+    grid-gap: 150px;
+    margin: 7rem 0 7rem 0;
+
+}
+.gr a{
+    font-size:20px ;
+    text-decoration: none;
+    color:var(--main-color);
+}
+.gr1{
+    width:90%;
+    margin: 20px auto;
+    display:grid;
+    grid-template-columns: 70% 20%;
+}
+.btns{
+    display:grid;
+    grid-template-columns: repeat(auto-fill , minmax(10px , 100px));
+    grid-gap: 1rem;
+}
+.btns button{
+    height: 3rem;
+    border-radius:40%;
+    background-color: var(--secon-color);
+    border:thin solid var(--main-color);
+    outline: 0;
+}
+.btns button:hover{
+    background-color: #282828;
+    color:var(--secon-color);
+    cursor:pointer;
+    border:none;
+    outline: 0;
+}
+.foh{
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 3rem ;
+    width:80%;
+    margin: 20vh auto;
+    grid-template-areas: "titulo titulo titulo"
+                          "cards cards cards";
+}
+.foh h2{
+    grid-area: titulo;
+    /* align-self: center; */
+    text-align: center;
+}
+.foh figure{
+    width:100%;
+   
+}
+.foh figure img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: 50% 0;
+}
