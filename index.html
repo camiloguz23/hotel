@@ -15,7 +15,22 @@
 </head>
 <body>
     <div class="reservarBox" id="reservarBox">
-        <div class="reservarMain"><a href="#" id="prueba">Cerrar</a></div>
+        <div class="reservarMain"><a href="#" id="prueba">Cerrar</a>
+            <form action="" id="reserva">
+                <div class="campos">
+                    <div>
+                        <label for="">Documento</label><br>
+                        <input type="number" name="documentoReser" id="">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Nombre del Reservador</label>
+                            <input type="text" name="nombreCliente" id="">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="contenedor">
         <header class="header">
@@ -33,7 +48,7 @@
                         <div class="iniciarS">
                             <a href="#" id="iniciarSesion">Iniciar Sesión <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                             <div class="submenu" id="submenuIniciar">
-                                <form action="" class="formIniciar">
+                                <form action="" class="formIniciar" id="formIniciar">
                                     <div class="grupo_email">
                                         <label for="email">Correo électronico</label>
                                         <input type="email" name="email" id="email" placeholder="Ingrese su email">
