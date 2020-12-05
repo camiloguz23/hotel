@@ -50,7 +50,9 @@ body {
 .reservarMain {
     width: 800px;
     height: 400px;
-    background-color: white;
+    background-image: url("../imagenes/fondoReserva.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: 20px;
 }
 
@@ -720,4 +722,41 @@ body {
 .fa-star{
     color:rgb(255, 145, 0);
     font-size: 25px;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-top: 5%
+    
+}
+
+.campos select {
+    height: 25px;
+    width: 170px;
+}
+
+.enviar {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-column: span 1;
+    margin-top: 5%;
+    margin-left: 30%;
+    
+}
+
+.enviar button {
+    width: 50%;
+    height: 150%;
+}
+
+#reserva {
+    border: 2px solid gold;
+    width: 70%;
+    height: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: hsla(0, 100%, 100%, 0.5);
 }
