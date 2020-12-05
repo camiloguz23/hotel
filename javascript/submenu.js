@@ -36,3 +36,24 @@ boton.addEventListener("click", () => {
     })
 })
 
+// formulario de reservas 
+ const reserva = document.getElementById("reserva")
+ const btnEnviar = document.getElementById("enviar")
+
+ btnEnviar.addEventListener("click", (e) => {
+    e.preventDefault()
+    const datoRe = new FormData(reserva)
+    fetch("php/reserva.php", {
+        method: "POST",
+        body: datoRe
+    }).then(res => res.text()).then(dato => {
+        console.log(dato)
+        reserva.innerHTML = ` <h2>su reservacion fue un exito</h2>`
+        setTimeout(() => {
+            
+            window.location = "index.html" 
+        }, 5000);
+    })
+ })
+
+
