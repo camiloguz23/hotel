@@ -23,3 +23,16 @@ formIngreso.addEventListener("submit", (e) => {
         body:datoformu
     }).then(res => res.text()).then(info => console.log(info))
 })
+
+// ingreso de optcion en el formulario
+
+const habi = document.getElementById("habi")
+const boton = document.getElementById("btn_reservar")
+
+boton.addEventListener("click", () => {
+    fetch("php/habitacion.php").then(inp => inp.text()).then(dato => {
+        console.log(dato)
+        habi.innerHTML = dato
+    })
+})
+
