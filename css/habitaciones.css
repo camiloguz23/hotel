@@ -162,7 +162,7 @@ body {
 .containerOne{
     margin-top:3%;
     width:95%;
-    display: flex;
+    display: flex; 
     
 }
 
@@ -175,10 +175,20 @@ body {
     font-size: 17px;
     margin-top:3%;
 }
+.containerHabitaciones{
+    width:55%;
+
+}
+.contenedorImageOne{
+    
+    width:40%;
+    margin-left:5%;
+}
 
 .imagenUNo{
-    margin-left:10%;
-    width:500px;
+    
+    width:100%;
+    
 }
 /* DOS LETRAS O FRASES */
 .dosletras{
@@ -262,13 +272,15 @@ body {
     display: none;
 }
 
-.listaDeServicios ul li{
-    padding: 0 0 4px 0;
+ ul li{
+    padding: 0 0 4px 0;list-style-position: inside;
 }
 
 .listaDeServicios ul{
-   
-    list-style-position: inside;
+    background-color: rgba(0, 0, 0, 0.164);
+    padding-left:30px;
+  
+    
 }
 
 .titulo{
@@ -284,7 +296,7 @@ body {
 
 .imagenesSuites{
     border:2px solid rgba(0, 0, 0, 0.459);
-    width: 500px;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -312,20 +324,29 @@ body {
 /*-------------------------------------- HABITACIONES------------------------ */
 .habitacionesGran{
     /* border:6px solid blue; */
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display:block;
+    margin-bottom: 20px;
+    
     gap:10px;
 }
 
 .cajitaHabitacion{
-    /* border:2px solid rgb(255, 153, 0); */
+     /* border:2px solid rgb(255, 153, 0);  */
+     padding-left:20px;
+     width: 50%;
 }
 
 .habitacionesImg{
     width:91%;
     margin: 2% 0 2% 2%;
 }
+
+/*  */
+.bigBoxOne,.bigBoxTwo,.bigBoxThree,.bigBoxFour{
+    display:flex;
+}
+
+
 
 /* -----------------footer-------------------------------- */
 .primeraFooter{
