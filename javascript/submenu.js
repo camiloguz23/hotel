@@ -56,4 +56,4 @@ boton.addEventListener("click", () => {
     })
  })
 
-
+//// ************ PAGINA HABITACION ****************************
