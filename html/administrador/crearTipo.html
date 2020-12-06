@@ -34,6 +34,7 @@
                <a href="habi_ocu.html">Reservaciones</a>
                <a href="crearHabi.html">Crear habitaciones</a>
                <a href="crearTipo.html">Crear tipo de habitación</a>
+               <a href="crearAdmin.html">Crear administrador</a>
             </div>
         </nav>
         <div class="box_contenido">
@@ -43,20 +44,12 @@
                 </div>
                 <form id="room_add" class="frm_room-add">
                     <div class="grupo grupo_idHabitacion">
-                        <label for="idHabitacion">Id Habitación</label>
-                        <input type="text" name="idHabitacion" id="idHabitacion">
+                        <label for="idTipoHabi">Id tipo de habitación</label>
+                        <input type="number" name="idTipoHabi" id="idTipoHabi">
                     </div>
                     <div class="grupo grupo_idTipHabitacion">
-                        <label for="idTipHabitacion">Tipo de habitación</label>
-                        <input type="text" name="idTipHabitacion" id="idTipHabitacion">
-                    </div>
-                    <div class="grupo grupo_noPersonas">
-                        <label for="noPersonas">Capacidad de personas</label>
-                        <input type="text" name="noPersonas" id="noPersonas">
-                    </div>
-                    <div class="grupo grupo_habiDisponibles">
-                        <label for="habiDisponibles">Habitaciones disponibles</label>
-                        <input type="text" name="habiDisponibles" id="habiDisponibles">
+                        <label for="idNomTipHabitacion">Tipo de habitación</label>
+                        <input type="text" name="idNomTipHabitacion" id="idNomTipHabitacion">
                     </div>
                     <div class="grupo_boton">
                         <input type="submit" value="Crear">
@@ -65,6 +58,6 @@
             </div>
         </div>
     </main>
-    <script src="../../javascript/administrador.js"></script>
+    <script src="../../javascript/crearTipo.js"></script>
 </body>
 </html>
