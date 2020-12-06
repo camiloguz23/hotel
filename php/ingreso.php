@@ -11,13 +11,13 @@ if(isset($_POST)){
     if(!empty($db)){
         
         $_SESSION['tip_usua'] = $db['id_tip_usu'];
-        $_SESSION['id_usua'] = $db['documento'];
+        $_SESSION['id_usua'] = $db['correo'];
 
         if($_SESSION['tip_usua']== 1){
             header("location: ../html/administrador/administrador.html");
             exit();
         }
-    }else{
+    } else{
         echo '<script>alert("el usuario no existe en nuestra base de datos");</script>';
         echo '<script>window.location="../index.html";</script>';
     }
