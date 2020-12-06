@@ -21,7 +21,11 @@ formIngreso.addEventListener("submit", (e) => {
     fetch("php/ingreso.php", {
         method:"POST",
         body:datoformu
-    }).then(res => res.text()).then(info => console.log(info))
+    }).then(res => res.text()).then(info => {
+        if (info == 1) {
+            window.location = "html/administrador/administrador.html"
+        }
+    })
 })
 
 // ingreso de optcion en el formulario
