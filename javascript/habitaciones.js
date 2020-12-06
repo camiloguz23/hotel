@@ -28,6 +28,20 @@ const esconder9 = document.getElementById('listaDeServicios9');
 const btnEsconder10 = document.getElementById('serviciosID10');
 const esconder10 = document.getElementById('listaDeServicios10');
 
+
+/*------------------------comenzar a esconder-------------- */
+btnEsconder1.addEventListener('click',()=>{
+    esconder1.classList.toggle('listaDeServicios');
+} )
+
+btnEsconder2.addEventListener('click',()=>{
+    esconder2.classList.toggle('listaDeServicios');
+} )
+
+btnEsconder3.addEventListener('click',()=>{
+    esconder3.classList.toggle('listaDeServicios');
+})
+
 btnEsconder10.addEventListener('click',()=>{
     esconder10.classList.toggle('listaDeServicios');
 })
@@ -59,20 +73,6 @@ btnEsconder4.addEventListener('click',()=>{
     esconder4.classList.toggle('listaDeServicios');
     
 })
-
-/*------------------------comenzar a esconder-------------- */
-btnEsconder1.addEventListener('click',()=>{
-    esconder1.classList.toggle('listaDeServicios');
-} )
-
-btnEsconder2.addEventListener('click',()=>{
-    esconder2.classList.toggle('listaDeServicios');
-} )
-
-btnEsconder3.addEventListener('click',()=>{
-    esconder3.classList.toggle('listaDeServicios')
-})
-
 
 
 
