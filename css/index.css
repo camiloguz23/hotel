@@ -649,10 +649,16 @@ body {
 }
 .ulp li a{
     text-decoration: none;
+    font-size: 13px;
+
     color: rgb(211, 211, 211);
 }
 
-.ulp li::after {
+.ulp li a:hover{
+    color:white;
+}
+
+.ulp li::before {
     content: "|";
     padding: 0 8px 0 8px;
     color: #666;
