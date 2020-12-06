@@ -12,12 +12,19 @@ $(document).ready(function () {
 
 // envio de datos formulario de ingreso 
 
-const formIngreso = document.getElementById("formIniciar")
+// const formIngreso = document.getElementById("formIniciar")
 
-formIngreso.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const datoformu = new FormData(formIngreso)
+// formIngreso.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const datoformu = new FormData(formIngreso)
 
+<<<<<<< HEAD
+//     fetch("php/ingreso.php", {
+//         method:"POST",
+//         body:datoformu
+//     }).then(res => res.text()).then(info => console.log(info))
+// })
+=======
     fetch("php/ingreso.php", {
         method:"POST",
         body:datoformu
@@ -27,6 +34,7 @@ formIngreso.addEventListener("submit", (e) => {
         }
     })
 })
+>>>>>>> be78a64be3af569aafc981a31e9b48ee0f686560
 
 // ingreso de optcion en el formulario
 
