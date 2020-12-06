@@ -340,6 +340,20 @@ body {
     flex-direction: column;
 }
 
+.fa-wifi:hover,
+.fa-concierge-bell:hover,
+.fa-dumbbell:hover,
+.fa-swimmer:hover,
+.fa-dog:hover,
+.fa-tshirt:hover,
+.fa-spa:hover,
+.fa-print:hover{
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+}
+
+
+
 .btn_servicios {
     text-decoration: none;
     color: white;
