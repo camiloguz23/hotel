@@ -18,23 +18,22 @@ $(document).ready(function () {
 //     e.preventDefault();
 //     const datoformu = new FormData(formIngreso)
 
-<<<<<<< HEAD
+
 //     fetch("php/ingreso.php", {
 //         method:"POST",
 //         body:datoformu
 //     }).then(res => res.text()).then(info => console.log(info))
 // })
-=======
-    fetch("php/ingreso.php", {
-        method:"POST",
-        body:datoformu
-    }).then(res => res.text()).then(info => {
-        if (info == 1) {
-            window.location = "html/administrador/administrador.html"
-        }
-    })
-})
->>>>>>> be78a64be3af569aafc981a31e9b48ee0f686560
+
+//     fetch("php/ingreso.php", {
+//         method:"POST",
+//         body:datoformu
+//     }).then(res => res.text()).then(info => {
+//         if (info == 1) {
+//             window.location = "html/administrador/administrador.html"
+//         }
+//     })
+// });
 
 // ingreso de optcion en el formulario
 
