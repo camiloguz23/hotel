@@ -87,6 +87,76 @@ body {
     text-decoration: none;
     font-size: 13px;
 }
+
+/* Estilos del submenu iniciar seccion */
+
+.iniciarS {
+    position: relative;
+}
+
+.submenu {
+    width: 300px;
+    height: 300px;
+    background-color: #fffbfb;
+    position: absolute;
+    border: 0.1px solid #666;
+
+    top: 44px;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.formIniciar {
+    width: 90%;
+    height: 90%;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.grupo_email, .grupo_password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo_email input, .grupo_password input {
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #ffb612;
+}
+
+.grupo_email input:focus, .grupo_password input:focus {
+    outline: none;
+}
+
+.btn_iniciar {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffb612;
+    cursor: pointer;
+}
+
+.btn_iniciar:focus {
+    outline: none;
+}
+
+
 /* Continuan estilos del header */
 
 .wordH a:hover, .iniciarS a:hover {
