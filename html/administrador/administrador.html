@@ -13,6 +13,29 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="flotante" id="flotante">
+        <div class="contenido_flotante">
+            <div class="cerrar_flotante">
+                <i class="fa fa-times-circle-o" aria-hidden="true" id="cerrarFlotante"></i>
+            </div>
+            <div class="titulo_flotante">
+                <h4>Editar habitación</h4>
+            </div>
+            <form id="form_editar">
+                <div class="grupo_flotante grupo_personas">
+                    <label for="noPersonas">Número de personas</label>
+                    <input type="number" id="noPersonas" name="noPersonas">
+                </div>
+                <div class="grupo_flotante grupo_habitaciones">
+                    <label for="noHabitaciones">Número de habitaciones</label>
+                    <input type="number" id="noHabitaciones" name="noHabitaciones">
+                </div>
+                <div class="grupo_boton-flotante">
+                    <input type="submit" id="btn_flotante" name="btn_flotante" value="Editar">
+                </div>
+            </form>
+        </div>
+    </div>
     <header class="header">
         <div class="name_administrador">
             <h4>Sistema Habitaciones</h4>
@@ -34,6 +57,7 @@
                <a href="habi_ocu.html">Reservaciones</a>
                <a href="crearHabi.html">Crear habitaciones</a>
                <a href="crearTipo.html">Crear tipo de habitación</a>
+               <a href="crearAdmin.html">Crear administrador</a>
             </div>
         </nav>
         <div class="box_contenido">
@@ -48,6 +72,7 @@
                         <th>No. Personas</th>
                         <th>No. Habitaciones</th>
                         <th>Habitaciones disponibles</th>
+                        <th>Acciones</th>
                     </tr>
                 </table>
             </div>

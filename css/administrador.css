@@ -9,6 +9,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #ededed;
+    position: relative;
 }
 
 /* Estilos header */
@@ -169,6 +170,16 @@ table td {
     height: 40px;
     padding: 0 10px;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_form_1 {
+    background-color: #ffb612;
+    border: none;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .frm_room-add {
@@ -206,4 +217,86 @@ table td {
     border-radius: 4px;
     border: none;
     border: 1px solid gray;
+}
+
+.flotante {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #28282852;
+    z-index: 2;
+}
+
+.contenido_flotante {
+    position: absolute;
+    top: 22%;
+    left: 30%;
+    width: 800px;
+    height: 250px;
+    background-color: white;
+    border: 4px solid gray;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_flotante {
+    width: 90%;
+    height: 40px;
+    border-bottom: 2px solid #bd213e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrar_flotante {
+    width: 95%;
+    height: 35px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cerrar_flotante i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contenido_flotante form {
+    padding: 10px;
+    width: 90%;
+    height: 175px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 80px;
+}
+
+.grupo_flotante {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.grupo_flotante input {
+    height: 30px;
+    padding: 0 10px;
+}
+
+.grupo_boton-flotante {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.grupo_boton-flotante input{
+    width: 200px;
+    height: 40px;
+    background-color: #ffb612;
+    border: none;
+    border-radius: 4px;
 }
