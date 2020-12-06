@@ -261,6 +261,29 @@ camaking.addEventListener("click", () => {
     })
 })
 
+const camadoble = document.getElementById("ocho")
+
+camadoble.addEventListener("click", () => {
+    const habi = document.getElementById("camadoble")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            camadoble.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                camadoble.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            camadoble.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                camadoble.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
+
 
 
 
