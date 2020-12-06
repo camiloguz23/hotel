@@ -28,15 +28,18 @@ const esconder9 = document.getElementById('listaDeServicios9');
 const btnEsconder10 = document.getElementById('serviciosID10');
 const esconder10 = document.getElementById('listaDeServicios10');
 
+/* aparecer suites o habitaciones */
+
+
 
 /*------------------------comenzar a esconder-------------- */
 btnEsconder1.addEventListener('click',()=>{
     esconder1.classList.toggle('listaDeServicios');
-} )
+})
 
 btnEsconder2.addEventListener('click',()=>{
     esconder2.classList.toggle('listaDeServicios');
-} )
+})
 
 btnEsconder3.addEventListener('click',()=>{
     esconder3.classList.toggle('listaDeServicios');
@@ -55,15 +58,12 @@ btnEsconder8.addEventListener('click',()=>{
 })
 
 btnEsconder7.addEventListener('click',()=>{
-    esconder7.classList.toggle('listaDeServicios');
-    
+    esconder7.classList.toggle('listaDeServicios'); 
 })
-
 
 btnEsconder6.addEventListener('click', ()=>{
     esconder6.classList.toggle('listaDeServicios');
 })
-
 
 btnEsconder5.addEventListener('click',()=>{
     esconder5.classList.toggle('listaDeServicios');
@@ -71,14 +71,27 @@ btnEsconder5.addEventListener('click',()=>{
 
 btnEsconder4.addEventListener('click',()=>{
     esconder4.classList.toggle('listaDeServicios');
-    
 })
 
 
 
+const btnHabitaciones = document.getElementById('habitacSuites');
+const btnSuites = document.getElementById('aparecerSuites');
 
+const suitesA = document.getElementById('cajasDeAbitaciones');/* suites */
+const habitacionesA = document.getElementById('habitacionesGran');
 
+btnHabitaciones.addEventListener('click',(e)=>{
+    e.preventDefault();
+    suitesA.style.display = 'none';
+    habitacionesA.style.display = 'block';
+})
 
+btnSuites.addEventListener('click',(a)=>{
+    a.preventDefault();
+    suitesA.style.display = 'grid';
+    habitacionesA.style.display = 'none';
+})
 
 
 
