@@ -9,6 +9,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 /* --nave---- */
 .header {
     width: 100%;
@@ -189,7 +191,7 @@ body {
 .reservar1 {
     width: 50%;
     height: 100%;
-    
+    cursor:pointer;
     display: flex;
     align-items: center;
 }
@@ -224,7 +226,7 @@ body {
 }
 /* ---------------------------------segunda seccion-------------------------- */
 .grandisisimo{
-
+  /*   border:11px solid yellow; */
     width:90%;
     margin:0 auto;
 }
@@ -268,6 +270,11 @@ body {
     margin-left: 30%;
  
 }
+
+.dosbtnopc:hover{
+    background-color: rgba(102, 102, 102, 0.541);
+}
+
 .dosletras a{
    
     text-decoration: none;
@@ -296,13 +303,7 @@ body {
 
 /* .------------------------cajita de abitaciones------------------- */
 
-.cajasDeAbitaciones{
- 
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows:  1fr ;
 
-}
 /* botones de mostrar  servicios */
 .services{
     background-color: transparent; 
@@ -321,10 +322,36 @@ body {
 .services:hover{
     background-color: rgba(223, 223, 223, 0.603);
 }
+/* aparecer habitaciones o cosas vainas */
+
+.cajasDeAbitaciones{/* suites */
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:  1fr ;
+}
+
+/* .cajasDeAbitaciones{/* suites *//*
+    border:11px solid red;
+   
+    
+} */
+
+
+
+.habitacionesGran{
+    /* border:6px solid blue; */
+    display:block;
+    margin-bottom: 20px;
+    gap:10px;
+}
+
+.habitacionesGran{ 
+    display:none;
+}
+
+
 
 /* lista de servicios */
-
-
 
 .listServices{
     color: rgb(22, 22, 22);
@@ -392,13 +419,7 @@ body {
 }
 
 /*-------------------------------------- HABITACIONES------------------------ */
-.habitacionesGran{
-    /* border:6px solid blue; */
-    display:block;
-    margin-bottom: 20px;
-    
-    gap:10px;
-}
+
 
 .cajitaHabitacion{
      /* border:2px solid rgb(255, 153, 0);  */
