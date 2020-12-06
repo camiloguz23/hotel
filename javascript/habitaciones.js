@@ -212,6 +212,8 @@ grandclub.addEventListener("click", () => {
             }, 6000);
         }
     })
+})
+
 const btnHabitaciones = document.getElementById('habitacSuites');
 const btnSuites = document.getElementById('aparecerSuites');
 
