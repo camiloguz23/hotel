@@ -94,8 +94,6 @@ $(document).ready(function () {
                 noPersonas: $('#noPersonas').val(),
                 noHabitaciones: $('#noHabitaciones').val()
             }
-    
-});
 
             $.post("../../php/editarHabi.php", datos,
                 function (response) {
@@ -103,6 +101,8 @@ $(document).ready(function () {
                     location.reload()
                 }
             );
+    
+});
         });
 
         $("#cerrarFlotante").click(function (e) { 
