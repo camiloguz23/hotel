@@ -160,6 +160,7 @@ body {
 }
 
 .containerOne{
+    margin-top:3%;
     width:95%;
     display: flex;
     
@@ -308,9 +309,28 @@ body {
 
 }
 
+/*-------------------------------------- HABITACIONES------------------------ */
+.habitacionesGran{
+    /* border:6px solid blue; */
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.cajitaHabitacion{
+    /* border:2px solid rgb(255, 153, 0); */
+}
+
+.habitacionesImg{
+    width:91%;
+    margin: 2% 0 2% 2%;
+}
+
 /* -----------------footer-------------------------------- */
 .primeraFooter{
     background-color: rgb(199, 199, 199);
+  
 }
 
 .informacion1{
@@ -338,20 +358,9 @@ body {
     margin-left: 2.2%;
 }
 
-.patrocinadores{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
- margin-left:10%;
-    width: 40%;
-    margin-bottom: 2%;
-    gap: 3px;
-  
-}
 
-.imgP{
-    width: 70px;
-    height: 60px;
-}
+
+
 
 /* patrocinadores */
 .patroContainer{
@@ -360,7 +369,19 @@ body {
     width: 70%;
     margin-left:14%;
 }
+.patrocinadores{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ margin-left:10%;
+    width: 40%;
+    margin-bottom: 2%;
+    gap: 3px; 
+}
 
+.imgP{
+    width: 70px;
+    height: 60px;
+}
 .patrocinadores2{
   
     display:grid;
@@ -514,10 +535,17 @@ body {
 }
 .ulp li a{
     text-decoration: none;
+    font-size: 13px;
+
     color: rgb(211, 211, 211);
 }
 
-.ulp li::after {
+.ulp li a:hover{
+    color:white;
+}
+
+
+.ulp li::before {
     content: "|";
     padding: 0 8px 0 8px;
     color: #666;
@@ -528,6 +556,7 @@ body {
 /* redes sociales */
 
 .hbe-socialIcons_links{
+    margin-top:2%;
     display: flex;
 }
 
