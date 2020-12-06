@@ -2,7 +2,8 @@ const $habi_dispo = document.getElementById("habi_dispo");
 const $habi_ocupada = document.getElementById("habi_ocupada");
 const $idTipHabitacion = document.getElementById("idTipHabitacion");
 const $fragment = document.createDocumentFragment();
-const $form_list = document.getElementById("")
+// const $form_list = document.getElementById("");
+const $cerrarSesion = document.getElementById("cerrarsesion");
 listaDisponible();
 listaOcupada();
 ListaTipo()
@@ -97,4 +98,8 @@ $(document).ready(function () {
 
 
     
+});
+
+$cerrarSesion.addEventListener("click", (e)=>{
+    window.location =  '../../php/cerrar_sesion.php';
 });
