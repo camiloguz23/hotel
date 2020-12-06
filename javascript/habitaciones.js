@@ -281,7 +281,7 @@ camaking.addEventListener("click", () => {
 const camadoble = document.getElementById("ocho")
 
 camadoble.addEventListener("click", () => {
-    const habi = document.getElementById("camadoble")
+    const habi = document.getElementById("camadobles")
     const dato = new FormData(habi)
     fetch("../php/disponibles.php", {
         method:"POST",
@@ -301,3 +301,25 @@ camadoble.addEventListener("click", () => {
     })
 })
 
+const vistacama = document.getElementById("nueve")
+
+vistacama.addEventListener("click", () => {
+    const habi = document.getElementById("vistacama")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            vistacama.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                vistacama.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            vistacama.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                vistacama.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
