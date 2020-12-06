@@ -9,9 +9,9 @@
     <script src="https://kit.fontawesome.com/a90c49b6b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <?php
+     <?php
         require "./cabecera.php";
-    ?>
+    ?> 
     <main>
         <figure class="img">
             <img src="../img/imgg.webp" alt="imgg">
