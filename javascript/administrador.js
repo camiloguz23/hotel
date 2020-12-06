@@ -110,7 +110,7 @@ $(document).ready(function () {
         });
     })
 
-    /
+    
     $cerrarSesion.addEventListener("click", (e)=>{
         window.location =  '../../php/cerrar_sesion.php';
     });
