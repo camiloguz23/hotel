@@ -75,13 +75,191 @@ btnEsconder4.addEventListener('click',()=>{
 })
 
 
+//********* BOTONES DE CONSULTAR DSIPONIBILIDAD ******************************/
 
+const acceKing = document.getElementById("btnacceking")
 
+acceKing.addEventListener("click", () => {
+    const habi = document.getElementById("acceking")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            acceKing.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                acceKing.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            acceKing.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                acceKing.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
 
+const suitConer = document.getElementById("uno")
 
+suitConer.addEventListener("click", () => {
+    const habi = document.getElementById("suitConer")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            suitConer.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                suitConer.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            suitConer.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                suitConer.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
 
+const suitExec = document.getElementById("dos")
 
+suitExec.addEventListener("click", () => {
+    const habi = document.getElementById("suitExec")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            suitExec.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                suitExec.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            suitExec.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                suitExec.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
 
+const accesDoble  = document.getElementById("tres")
+
+accesDoble.addEventListener("click", () => {
+    const habi = document.getElementById("accedoble")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            accesDoble.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                accesDoble.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            accesDoble.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                accesDoble.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
+
+const ada = document.getElementById("cuatro")
+
+ada.addEventListener("click", () => {
+    const habi = document.getElementById("ada")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            ada.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                ada.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            ada.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                ada.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
+
+const grandclub = document.getElementById("cinco")
+
+grandclub.addEventListener("click", () => {
+    const habi = document.getElementById("grandclub")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            grandclub.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                grandclub.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            grandclub.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                grandclub.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
+
+const grandclubdoble = document.getElementById("seis")
+
+grandclubdoble.addEventListener("click", () => {
+    const habi = document.getElementById("grandclubdoble")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            grandclubdoble.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                grandclubdoble.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            grandclubdoble.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                grandclubdoble.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
+
+const camaking = document.getElementById("siete")
+
+camaking.addEventListener("click", () => {
+    const habi = document.getElementById("camaking")
+    const dato = new FormData(habi)
+    fetch("../php/disponibles.php", {
+        method:"POST",
+        body:dato
+    }).then(res => res.text()).then(dat => {
+        if (dat == 0) {
+            camaking.innerHTML = `La habitacion no esta dsiponible`
+            setTimeout(() => {
+                camaking.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        } else {
+            camaking.innerHTML = `La habitaciones disponibles son ${dat}`
+            setTimeout(() => {
+                camaking.innerHTML = `Verificar Disponibilidad`
+            }, 6000);
+        }
+    })
+})
 
 
 
