@@ -80,21 +80,30 @@ $(document).ready(function () {
         );
     })
 
-    $('#form_editar').submit(function (e) { 
-        e.preventDefault();
-        
-    });
-
     $(document).on('click', '.btn_form_1', function() {
         let elemento = $(this)[0].parentElement.parentElement;
-        var idHabi = $(elemento).attr('idHabitacion');
+        let idHabi = $(elemento).attr('idHabitacion');
         $('#flotante').fadeIn(300);
+
+        $('#form_editar').submit(function (e) { 
+            e.preventDefault();
+
+            const datos = {
+                idhabi: idHabi,
+                noPersonas: $('#noPersonas').val(),
+                noHabitaciones: $('#noHabitaciones').val()
+            }
+
+            $.post("../../php/editarHabi.php", datos,
+                function (response) {
+                    alert(response)
+                    location.reload()
+                }
+            );
+        });
+
+        $("#cerrarFlotante").click(function (e) { 
+            $('#flotante').fadeOut(300);
+        });
     })
-
-    $("#cerrarFlotante").click(function (e) { 
-        $('#flotante').fadeOut(300);
-    });
-
-
-    
 });
