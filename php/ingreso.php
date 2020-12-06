@@ -4,7 +4,7 @@ require_once("baseDatos.php");
 if(isset($_POST)){
     $correo = $_POST["email"];
     $contra = $_POST["password"];
-
+    
     $consulta = "SELECT * from usuario where correo='$correo' and password = '$contra'";
     $query = mysqli_query($base , $consulta);
     $db = mysqli_fetch_assoc($query);
@@ -21,5 +21,5 @@ if(isset($_POST)){
         echo '<script>alert("el usuario no existe en nuestra base de datos");</script>';
         echo '<script>window.location = "../index.html"</script>';
     }
-}
+
 ?>
