@@ -20,10 +20,10 @@
                     <div class="encabezado_2">
                         <div class="wordH">
                             <a href="#">World of Hyatt</a></div>
-                        <div class="iniciarS">
+                        <!-- <div class="iniciarS">
                             <a href="#" id="iniciarSesion">Iniciar Sesión <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                             <div class="submenu" id="submenuIniciar">
-                                <form action="" class="formIniciar">
+                                <form action="../php/ingreso.php" class="formIniciar" method="POST">
                                     <div class="grupo_email">
                                         <label for="email">Correo électronico</label>
                                         <input type="email" name="email" id="email" placeholder="Ingrese su email">
@@ -35,7 +35,7 @@
                                     <input type="submit" class="btn_iniciar" value="Iniciar Sesión">
                                 </form>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

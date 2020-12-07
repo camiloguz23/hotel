@@ -1,3 +1,9 @@
+<?php
+session_start();
+if ($_SESSION['id_usua'] == "" & $_SESSION['id_usua'] == null) {
+    header("location: ../../index.html");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +24,7 @@
             <h4>Sistema Habitaciones</h4>
         </div>
         <div class="box_btn">
-            <button>Cerrar Sesión</button>
+           <a href=""><button>Cerrar Sesión</button></a>
         </div>
     </header>
     <main>
@@ -26,23 +32,34 @@
             <div class="info_admin">
                 <div class="foto_admin">
                     <h4>Bienvenido, Administrador</h4>
-                    <p>Harol Stiven Guzman</p>
+                    <p><?=$_SESSION["nombre"]?> <?=$_SESSION["apellido"]?></p>
                 </div>
             </div>
             <div class="navegacion">
-               <a href="administrador.html">Habitaciones</a>
-               <a href="habi_ocu.html">Reservaciones</a>
-               <a href="crearHabi.html">Crear habitaciones</a>
-               <a href="crearTipo.html">Crear tipo de habitación</a>
-               <a href="crearAdmin.html">Crear administrador</a>
+               <a href="administrador.php">Habitaciones</a>
+               <a href="habi_ocu.php">Reservaciones</a>
+               <a href="crearHabi.php">Crear habitaciones</a>
+               <a href="crearTipo.php">Crear tipo de habitación</a>
+               <a href="crearAdmin.php">Crear administrador</a>
             </div>
         </nav>
         <div class="box_contenido">
             <div class="contenido">
                 <div class="titulo">
-                    <h2>CREAR ADMINISTRADOR</h2>
+                    <h2>RESERVACIONES</h2>
                 </div>
-                
+                <table id="habi_ocupada">
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo habitación</th>
+                        <th>Documento</th>
+                        <th>Nombre cliente</th>
+                        <th>Correo cliente</th>
+                        <th>Fecha ingreso</th>
+                        <th>Fecha salida</th>
+                        <th>Acciones</th>
+                    </tr>
+                </table>
             </div>
         </div>
     </main>

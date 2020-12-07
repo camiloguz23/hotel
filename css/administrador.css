@@ -300,3 +300,82 @@ table td {
     border: none;
     border-radius: 4px;
 }
+
+/***********formulario registrar*************/
+
+.forreg{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: .3rem;
+    justify-content: center;
+    --form-ok-color:#4caf50;
+    --form-error-color:#f44336;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.forreg legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.forreg input{
+    width: 100%;
+    display: block;
+    height: 5vh;
+    padding-left: 3vh;
+}
+.forreg *::placeholder{
+    color:#000000
+} 
+.forreg [required]:valid{
+    border: thin solid var(--form-ok-color);
+}
+.forreg [required]:invalid{
+    border:thin solid var(--form-error-color);
+}
+.forreg input[type="submit"]{
+    width:50%;
+    margin: 3vh 0 0 25%;
+    background-color: #0161af;
+    color:#ffffff;
+    border: none;
+    outline: 0;
+    font-weight: bold;
+    font-size:1rem;
+    box-shadow: 10px 10px 20px rgba(61, 60, 60, 0.5);
+}
+.forreg input[type="submit"]:hover{
+    background-color: #1671bd;
+    color:#ffffff;
+    cursor:pointer;
+}
+.forreg-error{
+    margin-top:0rem;
+    font-size:80%;
+    background-color: var(--form-error-color);
+    color:#ffffff;
+    transition: all 800ms ease;
+    text-align: center;
+    width: 100%;
+    height: 4vh;
+    padding-left: 1rem;
+}
+.forreg-error.isactive{
+    display: block;
+    animation: show-messague 1s 1 normal 0s ease-out both;
+}
+.none{
+    display: none;
+}
+@keyframes show-messague{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
