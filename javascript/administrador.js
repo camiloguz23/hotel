@@ -38,7 +38,7 @@ function listaOcupada() {
         console.log(data)
         data.forEach(e => {
             $habi_ocupada.innerHTML += `<tr idHabitacion="${e.id_habitacion}">
-                                            <td>${e.id_habitacion}</td>
+                                            <td>${e.id_reservas}</td>
                                             <td>${e.nom_tip_habi}</td>
                                             <td>${e.documento}</td>
                                             <td>${e.nom_cliente}</td>
@@ -46,7 +46,9 @@ function listaOcupada() {
                                             <td>${e.fecha_ingreso}</td>
                                             <td>${e.fecha_salida}</td>
                                             <td idDocumento="${e.documento}">
-                                                <button class="btn_form" type="submit">Cancelar Reserva</button>
+                                                <div idReservas="${e.id_reservas}">
+                                                    <button class="btn_form" type="submit">Cancelar Reserva</button>
+                                                </div>
                                             </td>
                                         </tr>`;
         });
@@ -67,11 +69,13 @@ function ListaTipo() {
 $(document).ready(function () {
     $('#flotante').hide(0);
     $(document).on('click', '.btn_form', function() {
-        let element = $(this)[0].parentElement.parentElement;
-        let element2 = $(this)[0].parentElement
+        let element = $(this)[0].parentElement.parentElement.parentElement;
+        let element2 = $(this)[0].parentElement.parentElement;
+        let element3 = $(this)[0].parentElement;
         const datos = {
             id: $(element).attr('idHabitacion'),
             idDocumento: $(element2).attr('idDocumento'),
+            idReserva: $(element3).attr('idReservas')
         }
         $.post("../../php/cancelarReserva.php", datos,
             function (response) {
