@@ -749,10 +749,49 @@ body {
 }
 
 .reservarMain {
-    width: 800px;
+    border:1px solid red;
+    width: 45%;
     height: 400px;
+    
     background-image: url("../imagenes/fondoReserva.jpg");
-    background-size: contain;
+    background-size: 100vh 100vw;
+    z-index:3;
+    margin-top:15%;
+    margin-left:23%;
+    position: absolute;
     background-repeat: no-repeat;
     border-radius: 20px;
+    display:none;
+}
+
+
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-top: 5%;
+    color:rgb(255, 255, 255);
+}
+
+.campos select {
+    height: 25px;
+    width: 170px;
+}
+
+.enviar {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-column: span 1;
+    margin-top: 5%;
+    margin-left: 30%;
+    
+    
+}
+
+.enviar button {
+    width: 50%;
+    height: 150%;
+    cursor:pointer;
+    
 }

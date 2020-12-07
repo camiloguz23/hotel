@@ -232,6 +232,23 @@ btnSuites.addEventListener('click',(a)=>{
     habitacionesA.style.display = 'none';
 })
 
+/* mini formulario reservar ahora */
+const btnabrirR = document.getElementById('btn_reservar');
+const btncerrarR = document.getElementById('prueba');
+
+const aparecerForm = document.getElementById('reservarMain');
+
+btnabrirR.addEventListener('click',(e)=>{
+    e.preventDefault();
+    aparecerForm.style.display = 'grid';
+})
+
+btncerrarR.addEventListener('click',(z)=>{
+    z.preventDefault();
+    aparecerForm.style.display = 'none';
+})
+
+
 const grandclubdoble = document.getElementById("seis")
 
 grandclubdoble.addEventListener("click", () => {

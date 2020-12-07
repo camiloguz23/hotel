@@ -763,7 +763,7 @@ body {
     grid-column: span 1;
     margin-top: 5%;
     margin-left: 30%;
-    
+    background:red;
 }
 
 .enviar button {
