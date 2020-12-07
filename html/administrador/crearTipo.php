@@ -30,7 +30,7 @@ if ($_SESSION['id_usua'] == "" & $_SESSION['id_usua'] == null) {
     <main>
         <div class="contenedor">
             <nav>
-                <div class="nav_1">
+                <div class="nav">
                     <div class="info_admin">
                         <div class="foto_admin">
                             <h4>Bienvenido, Administrador</h4>
