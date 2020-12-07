@@ -240,7 +240,9 @@ const aparecerForm = document.getElementById('reservarMain');
 
 btnabrirR.addEventListener('click',(e)=>{
     e.preventDefault();
-    aparecerForm.style.display = 'grid';
+    
+    aparecerForm.style.display = 'block';
+    
 })
 
 btncerrarR.addEventListener('click',(z)=>{
