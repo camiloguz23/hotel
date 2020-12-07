@@ -24,7 +24,7 @@ if ($_SESSION['id_usua'] == "" & $_SESSION['id_usua'] == null) {
             <h4>Sistema Habitaciones</h4>
         </div>
         <div class="box_btn">
-           <a href=""><button>Cerrar Sesión</button></a>
+           <button id="cerrarsesion">Cerrar Sesión</button>
         </div>
     </header>
     <main>
