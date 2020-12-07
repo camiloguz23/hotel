@@ -1,3 +1,9 @@
+<?php
+session_start();
+if ($_SESSION['id_usua'] == "" & $_SESSION['id_usua'] == null) {
+    header("location: ../../index.html");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,15 +32,15 @@
             <div class="info_admin">
                 <div class="foto_admin">
                     <h4>Bienvenido, Administrador</h4>
-                    <p>Harol Stiven Guzman</p>
+                    <p><?=$_SESSION["nombre"]?> <?=$_SESSION["apellido"]?></p>
                 </div>
             </div>
             <div class="navegacion">
-               <a href="administrador.html">Habitaciones</a>
-               <a href="habi_ocu.html">Reservaciones</a>
-               <a href="crearHabi.html">Crear habitaciones</a>
-               <a href="crearTipo.html">Crear tipo de habitación</a>
-               <a href="crearAdmin.html">Crear administrador</a>
+               <a href="administrador.php">Habitaciones</a>
+               <a href="habi_ocu.php">Reservaciones</a>
+               <a href="crearHabi.php">Crear habitaciones</a>
+               <a href="crearTipo.php">Crear tipo de habitación</a>
+               <a href="crearAdmin.php">Crear administrador</a>
             </div>
         </nav>
         <div class="box_contenido">
