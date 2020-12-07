@@ -3,7 +3,7 @@ const $habi_ocupada = document.getElementById("habi_ocupada");
 const $idTipHabitacion = document.getElementById("idTipHabitacion");
 const $fragment = document.createDocumentFragment();
 // const $form_list = document.getElementById("");
-const $cerrarSesion = document.getElementById("cerrarsesion");
+const $cerrarSesion = document.getElementById('cerrarsesion');
 listaDisponible();
 listaOcupada();
 ListaTipo()
@@ -110,7 +110,60 @@ $(document).ready(function () {
         });
     })
 
-    
+    console.log($cerrarSesion);
     $cerrarSesion.addEventListener("click", (e)=>{
         window.location =  '../../php/cerrar_sesion.php';
+    });
+
+
+    const $formularioReg = document.getElementById("forreg");
+    console.log($formularioReg);
+    const $inputs = document.querySelectorAll(".forreg [required]");
+    console.log($inputs);
+    $inputs.forEach((input)=>{
+        const $span = document.createElement("span");
+        $span.id = input.name;
+        $span.textContent = input.title;
+        $span.classList.add("forreg-error" , "none");
+        input.insertAdjacentElement("afterend" , $span);
+
+    });
+    document.addEventListener("keyup", e=>{
+        if(e.target.matches(".forreg [required]")){
+            let pattern = e.target.pattern || e.target.dataset.pattern;
+            if(pattern && e.target.value !== ""){
+                let regexp = new RegExp(pattern);
+                return !regexp.exec(e.target.value)
+                 ? document.getElementById(e.target.name).classList.add("isactive")
+                 : document.getElementById(e.target.name).classList.remove("isactive")
+            }
+        }
+    });
+
+    $formularioReg.addEventListener("submit",(e)=>{
+        e.preventDefault();
+
+        let datos = new FormData($formularioReg);
+
+        $formularioReg.reset();
+        async function insertAdmin(){
+            try {
+                let res = await fetch("../../php/insertar.php",{ method:'POST', body: datos });
+                let json = await res.json();
+
+                if(!res.ok) throw({status: res.status, statusText: res.statusText});
+
+                if(json === "ok"){
+                    alert("usuario creado con exito");
+                }else if(json ==="errorcreacion"){
+                    alert("vaya ocurrio un error inexperado");
+                }else if(json ==="usuarioregistrado"){
+                    alert("usuario existente");
+                }
+            } catch (error) {
+                let messague = error.statusText || "ocurrio un error";
+                alert(`Error ${error.status} ${messague}`);
+            }
+        }
+        insertAdmin();
     });
