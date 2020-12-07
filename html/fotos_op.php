@@ -17,7 +17,7 @@
             <img src="../img/imgg.webp" alt="imgg">
         </figure>
         <nav class="menu2">
-            <a href="#">Descripsion</a>
+            <a href="#">Descripción</a>
             <a href="#">Fotos y opiniones</a>
             <a href="#">Mapas , Parqueadero + Transporte</a>
             <a href="#">Noticias + Eventos</a>
