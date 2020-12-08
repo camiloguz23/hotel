@@ -363,15 +363,29 @@ const reserva = document.getElementById("reserva")
      
     e.preventDefault()
     const datoRe = new FormData(reserva)
-    fetch("../php/reserva.php", {
-        method: "POST",
-        body: datoRe
-    }).then(res => res.text()).then(dato => {
-        console.log(dato)
-        reserva.innerHTML = ` <h2>su reservacion fue un exito</h2>`
-        setTimeout(() => {
+    const docu = document.getElementById("documentoReser")
+    const nom = document.getElementById("nombreCliente")
+    const correo = document.getElementById("correo")
+
+    if (docu.value == "" || nom.value == "" || correo == "")  {
+        reserva.innerHTML = ` <h2 style="color: white;">Llene todos los campos</h2>`
+            setTimeout(() => {
+                
+                window.location = "habitaciones.html" 
+            }, 5000);
+
+    } else {
+        fetch("php/reserva.php", {
+            method: "POST",
+            body: datoRe
+        }).then(res => res.text()).then(dato => {
             
-            window.location = "../index.html" 
-        }, 5000);
-    })
+            
+            reserva.innerHTML = ` <h2 style="color: white;">su reservacion fue un exito</h2>`
+            setTimeout(() => {
+                
+                window.location = "habitaciones.html" 
+            }, 5000);
+        })
+    }
  })

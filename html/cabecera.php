@@ -45,9 +45,9 @@
                         <div class="reservar1">
                             <p>Grand Hyatt, Bogotá</p>
                         </div>
-                        <div class="reservar1 reservar2">
+                        <!-- <div class="reservar1 reservar2">
                             <a href="#" id="btn_reservar">RESERVAR AHORA</a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="navegacion">
                         <div>
